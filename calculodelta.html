@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CalculoDelta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function calcular(){
+            var a;
+            var b;
+            var c;
+            var delta;
+            a=document.calculos.a.value;
+            b=document.calculos.b.value;
+            c=document.calculos.c.value;
+            delta=(b*b)-4*a*c;
+            document.calculos.delta.value=delta;
+        }
+    </script>
+</head>
+<body bgcolor="yellow" text="blue">
+    <form name="calculos">
+        <table align="center">
+            <tr>
+                <td><label>informe o valor de a:</label></td>
+                <td><input type="text" name="a" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <td><label>informe o valor de b:</label></td>
+                <td><input type="text" name="b" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <td><label>informe o valor de c:</label></td></td>
+                <td><input type="text" name="c" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" name="bt" value="calcule" onclick="calcular();""></td>
+            </tr> 
+            </td>
+            <br>
+            </tr>
+        </table>
+        <br>
+        <div style="border: 1px solid black">
+            <table align="center">
+                <tr>
+                    <td><label><b>O valor de delta é:</b></label></td>
+                    <td><input type="text" name="delta" value="" size="10 "> <br></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <center>
+    <img src="deltinha.png" width="400" height="400">
+</center>
+</body>
+</html>

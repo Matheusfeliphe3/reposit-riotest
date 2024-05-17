@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>música</title>
+<meta http-equiv="content-type="content="text/html;charset=UTF-8">
+<script type="text/javascript">
+    function calcular (){
+        var d
+        var t
+        var v
+        t=document.calculos.t.value;
+        v=document.calculos.v.value;
+        d=v*t;
+        document.calculos.d.value=d
+    }
+</script>
+    </head>
+    <body>
+        <h1></h1>
+        <form name="calculos">
+            <table align="center">
+                <tr>
+                    <td><label>Informe a velocidade: </label></td>
+                    <td><input type="text" name="v" value="" size="10"></td>
+                </tr>
+                    <tr>
+                        <td><label>Informe tempo: </label></td>
+                        <td><input type="text" name="t" value="" size="10"></td>
+
+                </tr>
+                <tr>
+                  <td cosplan="2" align="center">
+                    <input type="button" name="bt" value="calcule" onclick="calcular ();"></td>
+                    <br>
+                </tr>
+            </table>
+             <div style="border: 1 px solid blue ">
+                <table align="center">
+                    <tr>
+                        <td><label>A distância é: </label></td>
+                        <td><input type="text" name="d" value="" size="10"></td> <br>
+                    </tr>
+                </table>
+             </div>
+        </form>
+    </body>
+</html>

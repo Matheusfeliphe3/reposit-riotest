@@ -1,0 +1,55 @@
+<html>
+    <head>
+    <title>Trapezio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function calcular(){
+            var B;
+            var b;
+            var h;
+            var areatrapezio;
+            B=document.calculos.B.value;
+            b=document.calculos.b.value;
+            h=document.calculos.h.value;
+            areatrapezio=(B+b)*h/2;
+            document.calculos.areatrapezio.value=areatrapezio;
+        }
+    </script>
+</head>
+<body bgcolor="grenn" text="blue">
+    <form name="calculos">
+        <table align="center">
+            <tr>
+                <td><label>informe o valor de B:</label></td>
+                <td><input type="text" name="B" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <td><label>informe o valor de b:</label></td>
+                <td><input type="text" name="b" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <td><label>informe o valor de h:</label></td></td>
+                <td><input type="text" name="h" value="" size="10"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" name="bt" value="calcule" onclick="calcular();""></td>
+            </tr> 
+            </td>
+            <br>
+            </tr>
+        </table>
+        <br>
+        <div style="border: 1px solid red">
+            <table align="center">
+                <tr>
+                    <td><label><b>a area do Trapezio é:</b></label></td>
+                    <td><input type="text" name="areatrapezio" value="" size="10 "> <br></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <center>
+    <img src="area-trapezio.webp" width="500" height="450">
+</center>
+</body>
+</html>

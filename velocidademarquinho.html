@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>numero</title>
+    <meta http-equiv="content-type="content="text/html;charset=UTF-8">
+    <script type="text/javascript">
+        function calcular (){
+            var d
+            var t
+            var v
+            t=document.calculos.t.value;
+        d=document.calculos.d.value;
+        v=d/t;
+        document.calculos.v.value=v
+    }
+</script>
+</head>
+<body bgcolor="yellow"text="blue">
+</body>
+<h1>velocidade</h1>
+<form name="calculos">
+    <table align="center">
+        </tr>
+            <td><labe>Informe a Distância:</label></td>
+            <td><input type="text" name="t" value="" size="10"></td></br>
+            </tr>
+        <tr>
+             <td><label>informe de valor de d </label></td>
+             <td><input type="text" name="d" = value="" size="10"></td><br></td>
+            </tr>
+            <td>
+                <td><label>informe de valor de t</label></td>
+                <td><input type="text" name="t" = value="" size="10"></td><br></td>
+               </tr>
+               <td colspan="2"align="center"><input type="button" name="bt"value="calculevelocidade();">
+                <br>
+               </td>
+               </tr>
+             </table>
+               </br>
+            <div style="border:1 px solid black">
+            <table align="center">
+            </tr>
+                <td><label><b>resultado</b></label></td>
+                </tr><input type="text" name="resultados"value=""size="10"><br></td>
+                </tr>
+            </table>
+            </div>
+</form>
+</body>
+</html>

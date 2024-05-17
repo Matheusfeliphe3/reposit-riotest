@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>areatriangulo</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript">
+        function calcular(){
+            var b;
+            var h;
+            var areatriangulo;
+            b=document.calculos.b.value
+            h=document.calculos.h.value
+            areatriangulo=(b*h)/2;
+            document.calculos.areatriangulo.value=areatriangulo
+        }
+    </script>
+    </head>
+    <body bgcolor="blue" text="white">
+        <form name="calculos">
+            <table align="center">
+                <tr>
+                    <td><label>Informe a base (b):</label></td>
+                    <td><input type="text" name="b" value="" size="11"><br></td>
+                </tr>
+                <tr>
+                    <td><label>Informe a altura (h):</label></td>
+                    <td><input type="text" name="h" value="" size="11"><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" name="bt" value="calcule" onclick="calcular();"></td>
+                </tr>
+                <br>             
+            </table>
+            <br>
+            <div style="border: 1px solid black;">
+            <table align="center">
+                <tr>
+                    <td><label><b>O valor do triãngulo é:</b></label></td>
+                    <td><input type="text" name="areatriangulo" value="" size="11"></td>
+                </tr>
+                <br>
+            </table>
+        </div>
+        </form>
+        <center>
+        <img src="areatriangulo.jpg" width="440" height="405">
+    </center>
+    <p>A área do triângulo é igual à medida da sua superfície. Para calcular área de um triângulo qualquer, o método mais comum é multiplicar o comprimento da base e da altura e dividir por dois.
+
+        Conhecemos como triângulo um polígono que possui três lados, e, de acordo com as suas características, surgem alguns casos especiais de triângulo, por exemplo, o triângulo isósceles, o triângulo equilátero e o triângulo retângulo. Cada um deles possui uma particularidade no momento de calcular a sua área.</p>
+    </body>
+</html>

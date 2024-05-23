@@ -1,5 +1,12 @@
 body{
-  font-family: "Jersey 10 Charted", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: small-caps;
+  }
+  p{
+    text-indent: 6px;
+    text-decoration: overline;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+  }
